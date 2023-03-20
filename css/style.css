@@ -1,0 +1,281 @@
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+/* Estilo menu */
+.menu{
+  background-color: rgb(92, 92, 92);
+  font-size: 25px;
+  padding: 10px 30px 10px;
+  position: sticky;
+  top: 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+
+.menu-item a{
+  color: white;
+}
+
+.menu-item-activo a{
+  font-size: 1,9em;
+  color: #AF7AC5;
+  padding: 0px;
+}
+
+/* Estilos mains */
+
+main {
+  color:rgb(64, 64, 68);
+  padding: 20px;
+}
+
+.contacto, .servicios, .galeria {
+  display: flex;
+  justify-content: center;
+}
+
+
+section {
+  padding: 20px;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+
+/* Estilo formulario */
+.seccion-form div {
+  padding: 5px;
+}
+
+.redes h2, a {
+  color:black;
+}
+
+.redes a {
+  color:black;
+}
+
+/* .mapa {
+  width: 250px;
+} */
+
+
+
+/* Estilos fotter */
+footer {
+  background-color: grey;
+  padding-top: 20px;
+  padding: 10px 30px 10px;
+}
+
+.pie p, a {
+  color: white;
+}
+
+.pie h3 {
+  color: black
+}
+
+
+/* Estilos de imagenes */
+img.mediana{
+    width: 250px;
+    height: 250px;
+  }
+
+img.pequeña{
+    width: 20px;
+    height: 20px;
+  }
+
+
+/* Estilos Flexbox*/
+.contenedor-padre {
+  display: flex;
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
+  flex-flow: row wrap; /* combina los dos anteriores */
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-hijo {
+  background-color: lightgrey;
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+
+  /* flex-grow: 1   Ajusta las cajas para que no queden espacios en blanco */
+  /* flex-shrink:  */
+}
+
+.index-hijo {
+  width: 800px;
+  height: 250px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 1.4em;
+}
+
+.contacto-padre {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacto-hijo {
+  width: 600px;
+  padding: 10px;
+}
+
+.redes ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.pie-padre {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  height: 100px;
+  align-items: center;
+}
+
+.pie-nieto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Estilos GRID */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, 250px);
+  gap: 10px;
+}
+
+.galeria img{
+  border-radius: 5px;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, auto);
+  gap: 50px;
+
+  grid-template-areas:
+  "formulario mapa"
+  "formulario redes";
+}
+.formulario {
+  grid-area: formulario;
+  align-self: center;
+  justify-self: center;
+  background-color: blue;
+}
+.mapa {
+  grid-area: mapa;
+  background-color: aquamarine;
+  padding: 20px;
+}
+.redes {
+  grid-area: redes;
+  background-color: #AF7AC5;
+}
+
+
+/* Media queries */
+/* Celular */
+@media (max-width: 800px) {
+
+  .menu {
+    background-color: rgb(92, 92, 92);
+    font-size: 0.9em;
+    position: sticky;
+    top: 0;
+    text-decoration: none;
+  }
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contenedor-hijo {
+    background-color: lightgrey; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .galeria {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+
+    grid-template-areas:
+    "formulario "
+    "mapa "
+    "redes ";
+  }
+
+  .pie {
+    font-size: 0.6em;
+  }
+
+  .pie-padre {
+    height: auto;
+    align-items: center;
+  }
+
+  h3 {
+    padding-bottom: 5px;
+  }
+
+  .pie-nieto {
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+  }
+
+
+  
+
+}
+
