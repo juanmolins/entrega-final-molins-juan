@@ -12,12 +12,11 @@ a{
 
 /* Estilo menu */
 .menu{
-  background-color: rgb(92, 92, 92);
+  background-color: black;
   font-size: 25px;
-  padding: 10px 30px 10px;
-  position: sticky;
-  top: 0;
-  text-decoration: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
 }
 
 ul {
@@ -33,7 +32,7 @@ ul :hover {
 .menu ul {
   display: flex;
   justify-content: center;
-  gap: 0px  60px;
+  gap: 0px 60px;
 }
 
 
@@ -41,10 +40,18 @@ ul :hover {
   color: white;
 }
 
+.menu-item :hover{
+  color: grey;
+}
+
 .menu-item-activo a{
   font-size: 1,9em;
   color:darkgoldenrod;
 }
+
+#check-menu, label.menu-mobile {
+  display: none;
+} 
 
 /* Estilos mains */
 
@@ -180,70 +187,58 @@ img.pequeña{
 }
 
 
-
 /* Media queries */
-/* Celular */
-/* @media (max-width: 800px) {
+@media (max-width: 767px) {
 
   .menu {
-    background-color: rgb(92, 92, 92);
-    font-size: 0.9em;
     position: sticky;
     top: 0;
     text-decoration: none;
   }
   .menu ul {
+    display: none;    
+    position: absolute;
     flex-direction: column;
+    background-color: black;
+    width: auto;
+    height: auto; 
+    font-size: 1.1em;
     align-items: center;
-    gap: 10px;
+    gap: 10pc;  
   }
 
-  .contenedor-hijo {
-    background-color: lightgrey; 
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-  }
-
-  .galeria {
-    display: flex;
-    flex-flow: row wrap;
+  label.menu-mobile {
+    display: block;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    padding-left: 20px;
+    justify-content: center;
     align-items: center;
+}
+#check-menu:checked ~ul{
+  display: block;
+}
+
+  .card {
+    width: 400px;
   }
 
-  .contacto {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
-    gap: 10px;
-
-    grid-template-areas:
-    "formulario "
-    "mapa "
-    "redes ";
+  img.pequeña{
+    width: 15px;
+    height: 15px;
   }
 
   .pie {
-    font-size: 0.6em;
-  }
-
-  .pie-padre {
     height: auto;
-    align-items: center;
+  }
+  .pie p, a, ul{
+    font-size: 0.8em;
+  } 
+  .pie h3 {
+    font-size: 0.9em;
+    justify-content: center;
   }
 
-  h3 {
-    padding-bottom: 5px;
-  }
-
-  .pie-nieto {
-    flex-direction: column;
-    align-items: left;
-    gap: 5px;
-  }
-
-
-  
-
-} */
+}
 
