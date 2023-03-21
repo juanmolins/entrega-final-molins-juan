@@ -53,7 +53,12 @@ main {
   padding: 20px;
 }
 
-.contacto, .servicios, .galeria {
+.card {
+  background-color: lightgrey;
+  padding: 20px 20px 0px 20px;
+}
+
+.contacto, .galeria {
   display: flex;
   justify-content: center;
 }
