@@ -30,51 +30,56 @@
 
     <main class="contacto">
         <!--- Formulario de contacto -->
-        <form class="formulario" action="">
-            <div>
-                <input type="text" placeholder="Nombre">
+        <section class="row gap-4 justify-content-md-center">
+            <div class="formulario col-12 col-md-5">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@mail.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="15412312345">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-dark">Enviar</button>
+                </div>  
             </div>
-            <div>
-                <input type="email" placeholder="Email">
+            <div class="col-12 col-md-5 gap-4">
+                <div class="mapa row row-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.2504467899435!2d-67.99170828503114!3d-38.941106507155524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30f9930fdafd%3A0xf92e083c35dedcef!2sPresbitero%20J.%20M.%20Brentana%20158%2C%20Cipolletti%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1676990891290!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Brentana 158 - Cipolletti - Rio Negro</p>
+                </div>
+                <div class="redes row row-md-6">
+                    <ul class="redes">
+                        <h2>Redes Sociales</h2>
+                        <li>
+                            <img class=pequeña src="./images/twitter.png">
+                            <a>Twitter</a>            
+                        </li>
+                        <li>
+                            <img class=pequeña src="./images/facebook.jpg">
+                            <a>Facebook</a>
+                        </li>
+                        <li>
+                            <img class=pequeña src="./images/instagram.jpg">
+                            <a>Instagram</a>
+                        </li>
+                        <li>
+                            <img class=pequeña src="./images/youtube.png">
+                            <a>Youtube</a>
+                        </li>
+                        </ul>
+                </div>
             </div>
-            <div>
-                <input type="tel" placeholder="Telefono">
-            </div>
-            <div>
-                <textarea type="mensaje" placeholder="Mensaje"></textarea>
-            </div>
-            <div>
-                <input type="button" value="Enviar">  
-            </div>
-        </form>
 
-        <section class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.2504467899435!2d-67.99170828503114!3d-38.941106507155524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30f9930fdafd%3A0xf92e083c35dedcef!2sPresbitero%20J.%20M.%20Brentana%20158%2C%20Cipolletti%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1676990891290!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Brentana 158 - Cipolletti - Rio Negro</p>
-        </section>
-
-        <section class="redes">
-            <ul>
-            <h2>Redes Sociales</h2>
-            <li>
-                <img class=pequeña src="./images/twitter.png">
-                <a>Twitter</a>            
-            </li>
-            <li>
-                <img class=pequeña src="./images/facebook.jpg">
-                <a>Facebook</a>
-            </li>
-            <li>
-                <img class=pequeña src="./images/instagram.jpg">
-                <a>Instagram</a>
-            </li>
-            <li>
-                <img class=pequeña src="./images/youtube.png">
-                <a>Youtube</a>
-            </li>
-            </ul>
-        </section>
-    
+        </section>      
     </main>
 
 

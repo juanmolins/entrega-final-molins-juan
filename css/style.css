@@ -58,7 +58,7 @@ main {
   padding: 20px 20px 0px 20px;
 }
 
-.contacto, .galeria {
+.galeria {
   display: flex;
   justify-content: center;
 }
@@ -160,21 +160,10 @@ img.pequeña{
   font-size: 1.4em;
 }
 
-.contacto-padre {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.contacto-hijo {
-  width: 600px;
-  padding: 10px;
-}
-
 .redes ul {
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 
@@ -190,31 +179,6 @@ img.pequeña{
   border-radius: 5px;
 }
 
-.contacto {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, auto);
-  gap: 50px;
-
-  grid-template-areas:
-  "formulario mapa"
-  "formulario redes";
-}
-.formulario {
-  grid-area: formulario;
-  align-self: center;
-  justify-self: center;
-  background-color: blue;
-}
-.mapa {
-  grid-area: mapa;
-  background-color: aquamarine;
-  padding: 20px;
-}
-.redes {
-  grid-area: redes;
-  background-color: #AF7AC5;
-}
 
 
 /* Media queries */
