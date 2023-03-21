@@ -110,6 +110,10 @@ img.pequeña{
     height: 20px;
   }
 
+  img.slide{
+    height: 500px;
+    object-fit: cover;
+  }
 
 /* Estilos Flexbox*/
 .contenedor-padre {
