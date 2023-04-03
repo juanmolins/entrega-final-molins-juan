@@ -1,60 +1,64 @@
-@charset "UTF-8";
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
 
 /* Estilo menu */
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  font-size: 25px;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 0;
-}
-.menu ul {
-  gap: 0px 60px;
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: 25px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;    
+    ul { 
+        gap: 0px 60px;
+      }
+  } 
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0px;
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  .menu-item {
+    a{
+      color: white;
+    }
+    :hover{
+      color: grey;
+    }
+  }
+
+  .menu-item-activo {
+    a{
+      font-size: 1,9em;
+      color:darkgoldenrod;
+    }
 }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  margin-bottom: 0px;
-}
-ul :hover {
-  cursor: pointer;
-}
+  #check-menu, label.menu-mobile {
+    display: none;
+  } 
 
-.menu-item a {
-  color: white;
-}
-.menu-item :hover {
-  color: grey;
-}
 
-.menu-item-activo a {
-  font-size: 1, 9em;
-  color: darkgoldenrod;
-}
+  /* Estilos mains */
 
-#check-menu, label.menu-mobile {
-  display: none;
-}
-
-/* Estilos mains */
 main {
-  color: rgb(64, 64, 68);
+  color:rgb(64, 64, 68);
   padding: 20px;
 }
 
@@ -65,12 +69,14 @@ button {
 .card {
   background-color: lightgrey;
   padding: 20px 20px 0px 20px;
+
 }
 
 .galeria {
   display: flex;
   justify-content: center;
 }
+
 
 section {
   padding: 20px;
@@ -80,9 +86,11 @@ h1 {
   padding-bottom: 20px;
 }
 
+
 .redes h2 {
-  color: black;
+  color:black;
 }
+
 
 /* Estilos fotter */
 footer {
@@ -95,50 +103,51 @@ footer {
 
 .pie {
   margin: 0px;
-}
-.pie p, .pie a, .pie ul {
+  p, a, ul{
   color: white;
   font-size: 1em;
   justify-content: center;
   padding: 0px 10px;
-}
-.pie h3 {
-  color: black;
-  font-size: 1.2em;
+  }
+  h3 {
+    color: black;
+    font-size: 1.2em;
+  }
 }
 
 /* Estilos de imagenes */
-img.mediana {
+img.mediana{
   width: 250px;
   height: 250px;
 }
 
-img.galeria {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+img.galeria{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-img.pequeña {
-  width: 25px;
-  height: 25px;
+img.pequeña{
+    width: 25px;
+    height: 25px;
 }
 
-img.logo-pequeño {
-  width: auto;
-  height: 40px;
+img.logo-pequeño{
+    width: auto;
+    height: 40px;
 }
 
-img.slide {
+img.slide{
   height: 500px;
   object-fit: cover;
 }
 
-img.servicios {
+img.servicios{
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
+
 
 /* Estilos Flexbox*/
 .contenedor-padre {
@@ -179,9 +188,9 @@ img.servicios {
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(4, 250px);
   gap: 5px;
-}
-.galeria img {
-  border-radius: 5px;
+  img{
+    border-radius: 5px;
+  }
 }
 
-/*# sourceMappingURL=style.css.map */
+
