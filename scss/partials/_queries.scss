@@ -2,40 +2,37 @@
 /* Celular */
 @media (max-width: 767px) {
 
-    .menu {
-      position: sticky;
-      top: 0;
-      text-decoration: none;
-      ul {
-        display: none;
-        position: absolute;
-        float: right;
-        flex-direction: column;
-        background-color: black;
-        width: 150px;
-        height: auto; 
-        font-size: 0.9em;
-        align-items: center;
-        margin: 0px;
-        padding-left: 10px; 
-      }
-    }
-    
-  
-    label.menu-mobile {
-      display: flex;
-      justify-content: space-between;
+  .menu {
+    position: sticky;
+    top: 0;
+    text-decoration: none;
+    ul {
+      display: none;
+      position: absolute;
+      float: right;
+      flex-direction: column;
+      background-color: black;
+      width: 150px;
+      height: auto; 
+      font-size: 0.9em;
       align-items: center;
-      font-size: 1.5em;
-      color: white;
-      cursor: pointer;
-      padding: 5px 10px;
-
-    }
+      margin: 0px;
+      padding-left: 10px; 
+      }
+  }
+    
+  label.menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
 
   #check-menu:checked ~ul{
     display: block;
- 
   }
 
   .galeria {
@@ -45,14 +42,12 @@
     gap: 5px;
     }
     .mediana:nth-child(1) {
-        grid-row-start: span 2;
-      }
-      .mediana:nth-child(15) {
-        grid-column-start: span 2;
-        grid-row-start: span 1;
-      }
-
-    
+      grid-row-start: span 2;
+    }
+    .mediana:nth-child(15) {
+      grid-column-start: span 2;
+      grid-row-start: span 1;
+    }
     
     .card {
       width: 400px;
@@ -65,28 +60,27 @@
 
     .pie {
       height: auto;
-      gap: 10px;  
-    }
-    .pie p, a, ul{
-      font-size: 0.9em;
-      padding: 0px;
-      margin-top: 10px;
-    } 
-    .pie ul {
+      gap: 10px;
+      p, a, ul{
+        font-size: 0.9em;
+        padding: 0px 8px;
+        margin-top: 10px;
+      }
+      ul {
         margin-top: 0px;
-    }
-    .pie h3 {
-      font-size: 0.9em;
-      justify-content: center;
-      margin-top: 10px;
-      margin-bottom: 0px;
-    }
-    .der-dis-lg {
-        display: none;
-    }
-    
-    .pie p {
+      }
+      h3 {
+        font-size: 0.9em;
         justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+      .der-dis-lg {
+        display: none;
+      }
+      p {
+        justify-content: center;
+      }
     }
   }
   
@@ -94,7 +88,10 @@
   /* Tablet */
 @media (min-width:768px) and (max-width: 991px) {
 
-    .galeria {
+  .menu ul{
+    margin: 0px;
+  }  
+  .galeria {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(7, 250px);

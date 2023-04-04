@@ -257,9 +257,9 @@ img.servicios {
     height: auto;
     gap: 10px;
   }
-  .pie p, a, ul {
+  .pie p, .pie a, .pie ul {
     font-size: 0.9em;
-    padding: 0px;
+    padding: 0px 8px;
     margin-top: 10px;
   }
   .pie ul {
@@ -271,7 +271,7 @@ img.servicios {
     margin-top: 10px;
     margin-bottom: 0px;
   }
-  .der-dis-lg {
+  .pie .der-dis-lg {
     display: none;
   }
   .pie p {
@@ -280,6 +280,9 @@ img.servicios {
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
+  .menu ul {
+    margin: 0px;
+  }
   .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
