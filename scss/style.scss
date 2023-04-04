@@ -12,22 +12,23 @@
 
 /* Estilo menu */
 .menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
     font-size: 25px;
     width: 100%;
-    height: 50px;
+    height: auto;
     margin-bottom: 0;    
     ul { 
-        gap: 0px 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px 60px;
       }
   } 
 
   ul {
     list-style-type: none;
     display: flex;
+    justify-content: center;
     margin-bottom: 0px;
     :hover {
       cursor: pointer;
@@ -62,21 +63,13 @@ main {
   padding: 20px;
 }
 
-button {
-  opacity: 2;
-}
-
 .card {
   background-color: lightgrey;
   padding: 20px 20px 0px 20px;
-
+  h2{
+    padding-top: 10px;
+  }
 }
-
-.galeria {
-  display: flex;
-  justify-content: center;
-}
-
 
 section {
   padding: 20px;
@@ -96,8 +89,7 @@ h1 {
 footer {
   background-color: grey;
   width: auto;
-  height: 150px;
-  padding-top: 20px;
+  height: auto;
   align-items: center;
 }
 
@@ -107,13 +99,22 @@ footer {
   color: white;
   font-size: 1em;
   justify-content: center;
-  padding: 0px 10px;
+  padding: 0px 8px;
   }
+
   h3 {
     color: black;
     font-size: 1.2em;
   }
+  .dis {
+    color: darkgoldenrod;
+    background-color: black;
+    margin: 0px;
+    padding: 5px;
+    padding-left: 20px;
+ }
 }
+
 
 /* Estilos de imagenes */
 img.mediana{
@@ -193,4 +194,5 @@ img.servicios{
   }
 }
 
+@import "queries"
 
