@@ -189,17 +189,57 @@ img.servicios {
   height: 100%;
   object-fit: cover;
 }
-.galeria .mediana:nth-child(4) {
+
+.mediana:nth-child(4) {
   grid-column-start: span 2;
 }
-.galeria .mediana:nth-child(6) {
+
+.mediana:nth-child(6) {
   grid-row-start: span 2;
 }
-.galeria .mediana:nth-child(12) {
+
+.mediana:nth-child(12) {
   grid-row-start: span 2;
   grid-column-start: span 2;
 }
 
+.galeria img:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
 /* Media queries */
 /* Celular */
 @media (max-width: 767px) {
@@ -232,6 +272,38 @@ img.servicios {
   }
   #check-menu:checked ~ ul {
     display: block;
+  }
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
   }
   .galeria {
     display: grid;
