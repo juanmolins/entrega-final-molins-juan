@@ -34,12 +34,13 @@
     </nav>     
 
     <!-- galeria de imagenes -->
-    <main class="galeria">
-        <img class="mediana pulse" src="./images/galeria01.jpeg">
-        <img class=mediana src="./images/galeria02.jpeg">
-        <img class=mediana src="./images/galeria03.jpeg">
-        <img class=mediana src="./images/galeria04.jpeg">
-        <img class=mediana src="./images/galeria05.jpeg">
+    <main>
+        <div class="galeria">
+        <img class=mediana src="./images/galeria01.jpeg" data-bs-toggle="modal" data-bs-target="#modal-galeria01">
+        <img class=mediana src="./images/galeria02.jpeg" data-bs-toggle="modal" data-bs-target="#modal-galeria02">
+        <img class=mediana src="./images/galeria03.jpeg" data-bs-toggle="modal" data-bs-target="#modal-galeria03">
+        <img class=mediana src="./images/galeria04.jpeg" data-bs-toggle="modal" data-bs-target="#modal-galeria04">
+        <img class=mediana src="./images/galeria05.jpeg" data-bs-toggle="modal" data-bs-target="#modal-galeria05">
         <img class=mediana src="./images/galeria06.jpeg">
         <img class=mediana src="./images/galeria07.jpeg">
         <img class=mediana src="./images/galeria08.jpeg">
@@ -50,6 +51,50 @@
         <img class=mediana src="./images/galeria13.jpeg">
         <img class=mediana src="./images/galeria14.jpeg">
         <img class=mediana src="./images/galeria15.jpeg">
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modal-galeria01" tabindex="-1" aria-labelledby="modal-galeria01" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl bg-dark position-relative">
+              <div class="modal-content bg-dark">
+                <img class="m-2" src="./images/galeria01mod.jpeg">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button> 
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-galeria02" tabindex="-1" aria-labelledby="modal-galeria02" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl bg-dark position-relative">
+              <div class="modal-content bg-dark">
+                <img class="m-2" src="./images/galeria02mod.jpeg">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button> 
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-galeria01" tabindex="-1" aria-labelledby="modal-galeria01" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl bg-dark position-relative">
+              <div class="modal-content bg-dark">
+                <img class="m-2" src="./images/galeria01mod.jpeg">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button> 
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-galeria01" tabindex="-1" aria-labelledby="modal-galeria01" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl bg-dark position-relative">
+              <div class="modal-content bg-dark">
+                <img class="m-2" src="./images/galeria01mod.jpeg">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button> 
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-galeria01" tabindex="-1" aria-labelledby="modal-galeria01" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl bg-dark position-relative">
+              <div class="modal-content bg-dark">
+                <img class="m-2" src="./images/galeria01mod.jpeg">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button> 
+              </div>
+            </div>
+        </div>
+        
     </main>
 
     <footer class="pie row justify-content-around text-center">
@@ -96,5 +141,7 @@
             <p class="dis d-flex">Powered by RM-Diseños</p>
         </div> 
     </footer>
+
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
