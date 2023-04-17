@@ -68,6 +68,13 @@
     }
     } 
 
+  .slide{
+    img {
+      height: 300px;
+      object-fit: cover;
+    }
+    }
+
   .galeria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

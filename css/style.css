@@ -9,7 +9,6 @@
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 /* Estilo menu */
@@ -32,9 +31,6 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 0px;
-}
-ul :hover {
-  cursor: pointer;
 }
 
 .menu-item a {
@@ -78,6 +74,9 @@ h1 {
 .redes h2 {
   color: black;
 }
+.redes li :hover {
+  cursor: pointer;
+}
 
 /* Estilos fotter */
 footer {
@@ -106,6 +105,9 @@ footer {
   margin: 0px;
   padding: 5px;
   padding-left: 20px;
+}
+.pie ul :hover {
+  cursor: pointer;
 }
 
 /* Estilos de imagenes */
@@ -241,6 +243,11 @@ img.servicios {
     transform: scale3d(1, 1, 1);
   }
 }
+.mi-modal {
+  height: auto;
+  background-color: aqua;
+}
+
 /* Media queries */
 /* Celular */
 @media (max-width: 767px) {
@@ -305,6 +312,10 @@ img.servicios {
       -webkit-transform: none;
       transform: none;
     }
+  }
+  .slide img {
+    height: 300px;
+    object-fit: cover;
   }
   .galeria {
     display: grid;

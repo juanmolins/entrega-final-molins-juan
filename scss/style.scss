@@ -21,9 +21,6 @@ ul {
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
-    :hover {
-    cursor: pointer;
-    }
   }
 
 .menu-item {
@@ -71,10 +68,16 @@ h1 {
 }
 
 
-.redes h2 {
+.redes { 
+  h2 {
   color:black;
+  }
+  li {
+  :hover {
+    cursor:pointer;
+  }  
+  }
 }
-
 
 /* Estilos fotter */
 footer {
@@ -102,6 +105,11 @@ footer {
     margin: 0px;
     padding: 5px;
     padding-left: 20px;
+ }
+ ul {
+  :hover {
+    cursor: pointer;
+  }
  }
 }
 
@@ -134,7 +142,7 @@ img.slide{
 }
 
 img.servicios{
-  object-fit: cover;
+  object-fit: cover;  
   width: 100%;
   height: 100%;
 }
@@ -173,6 +181,7 @@ img.servicios{
   color: black;
 }
 
+// Galeria
 /* Estilos GRID */
 .galeria {
   display: grid;
@@ -237,6 +246,12 @@ img.servicios{
   transform: scale3d(1, 1, 1);
   }
   } 
+
+  // Modal
+  .mi-modal {
+    height: auto;
+    background-color: aqua;
+  }
 
 @import "partials/queries"
 
