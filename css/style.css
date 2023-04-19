@@ -82,6 +82,9 @@ h1 {
 .redes h2 {
   color: black;
 }
+.redes a {
+  color: black;
+}
 .redes li :hover {
   cursor: pointer;
 }
@@ -99,13 +102,13 @@ footer {
 }
 .pie p, .pie a, .pie ul {
   color: white;
-  font-size: 1em;
+  font-size: 0.95em;
   justify-content: center;
   padding: 0px 8px;
 }
 .pie h3 {
   color: black;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
 }
 .pie .dis {
